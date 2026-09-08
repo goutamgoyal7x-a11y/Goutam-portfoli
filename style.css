@@ -1,0 +1,848 @@
+/* =========================================================
+   GAUTAM GOYAL - PERSONAL PORTFOLIO
+   Clean & Professional Portfolio Design
+   ========================================================= */
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #202938;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 22px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+header > h1 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #111827;
+    line-height: 1.2;
+}
+
+header > h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #667085;
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    margin-top: -30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.25s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    transition: width 0.25s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+main {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   ALL SECTIONS
+   ========================================================= */
+
+section {
+    padding: 90px 0;
+    scroll-margin-top: 100px;
+}
+
+section > h2,
+section > h3 {
+    text-align: center;
+    color: #111827;
+    margin-bottom: 40px;
+}
+
+section > h2 {
+    font-size: 32px;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+section > h3 {
+    font-size: 30px;
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   HOME
+   ========================================================= */
+
+#Home {
+    min-height: 620px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+    padding-top: 90px;
+}
+
+#Home img {
+    width: 100%;
+    max-width: 390px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    border: 7px solid #ffffff;
+}
+
+#Home h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.1;
+    color: #111827;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+#Home h2 {
+    color: #2563eb;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 14px 0 18px;
+}
+
+#Home p {
+    max-width: 620px;
+    color: #667085;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button {
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 12px 22px;
+    margin: 6px 8px 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+}
+
+button a {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+#About {
+    background: #ffffff;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+#About > img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    border: 6px solid #f1f5f9;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+#About h3 {
+    text-align: center;
+    color: #111827;
+    font-size: 22px;
+    margin: 22px 0 10px;
+}
+
+#About p {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    color: #667085;
+}
+
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
+#Education {
+    text-align: center;
+}
+
+#Education article {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    margin: 1%;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8ecf1;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#Education article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+#Education article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#Education article h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+#Education article p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+#Skills {
+    background: #ffffff;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+#Skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+#Skills li {
+    color: #111827;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+
+#Skills ul > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+#Skills ul > p {
+    color: #667085;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+#Project {
+    text-align: center;
+}
+
+#Project article {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    margin: 1%;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e7ebf0;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#Project article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.10);
+}
+
+#Project article img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    background: #eef2f6;
+}
+
+#Project article h3 {
+    color: #111827;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#Project article p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+#Project article button {
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+#Experience {
+    max-width: 900px;
+    margin: auto;
+}
+
+#Experience article {
+    background: #ffffff;
+    border-left: 4px solid #2563eb;
+    padding: 28px 30px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+#Experience h4 {
+    color: #111827;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+#Experience p {
+    color: #667085;
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+#Servies {
+    padding-top: 70px;
+}
+
+#Servies article {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+#Servies article h2 {
+    text-align: center;
+    color: #111827;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#Servies article h3 {
+    color: #111827;
+    font-size: 19px;
+    margin-top: 22px;
+    margin-bottom: 7px;
+}
+
+#Servies article p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+#Profile {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#Profile h2 {
+    margin-bottom: 15px;
+}
+
+#Profile button {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+#Contact {
+    max-width: 800px;
+    margin: auto;
+}
+
+#Contact > p {
+    text-align: center;
+    color: #667085;
+    margin-bottom: 30px;
+}
+
+#Contact form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+#Contact label {
+    display: block;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#Contact input,
+#Contact textarea {
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: #111827;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 18px;
+}
+
+#Contact input {
+    height: 46px;
+}
+
+#Contact textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#Contact input:focus,
+#Contact textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+#Contact form button {
+    margin-top: 4px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background: #111827;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+footer p {
+    color: #aab2bf;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer a {
+    display: inline-block;
+    color: #ffffff;
+    margin: 18px 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        justify-content: flex-start;
+        margin-top: 18px;
+        gap: 15px 20px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    #Home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+        padding-top: 65px;
+    }
+
+    #Home img {
+        margin: auto;
+        width: 300px;
+        height: 350px;
+    }
+
+    #Home p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Education article,
+    #Project article {
+        width: 47%;
+    }
+
+    #Skills ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        position: relative;
+        padding: 18px 5%;
+        text-align: center;
+    }
+
+    header > h1 {
+        font-size: 27px;
+    }
+
+    header > h2 {
+        font-size: 13px;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 18px;
+        gap: 12px 17px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    section > h2,
+    section > h3 {
+        font-size: 27px;
+        margin-bottom: 28px;
+    }
+
+    /* Home */
+
+    #Home {
+        min-height: auto;
+        padding: 55px 0;
+        gap: 30px;
+    }
+
+    #Home img {
+        width: 245px;
+        height: 290px;
+        border-width: 5px;
+    }
+
+    #Home h1 {
+        font-size: 38px;
+    }
+
+    #Home h2 {
+        font-size: 20px;
+    }
+
+    #Home p {
+        font-size: 15px;
+    }
+
+    #Home button {
+        margin: 5px 3px;
+    }
+
+    /* About */
+
+    #About {
+        padding: 45px 22px;
+        border-radius: 15px;
+    }
+
+    #About > img {
+        width: 145px;
+        height: 145px;
+    }
+
+    #About h3 {
+        font-size: 20px;
+    }
+
+    #About p {
+        font-size: 14px;
+    }
+
+    /* Education */
+
+    #Education article,
+    #Project article {
+        display: block;
+        width: 100%;
+        margin: 0 0 22px;
+    }
+
+    #Education article img {
+        height: 190px;
+    }
+
+    /* Skills */
+
+    #Skills {
+        padding: 45px 20px;
+        border-radius: 15px;
+    }
+
+    #Skills ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    #Skills ul > img {
+        height: 120px;
+    }
+
+    #Skills li {
+        font-size: 17px;
+    }
+
+    /* Projects */
+
+    #Project article img {
+        height: 200px;
+    }
+
+    /* Experience */
+
+    #Experience article {
+        padding: 23px;
+    }
+
+    /* Services */
+
+    #Servies article {
+        padding: 25px 20px;
+    }
+
+    #Servies article h2 {
+        font-size: 26px;
+    }
+
+    /* Profile */
+
+    #Profile {
+        padding: 45px 15px;
+    }
+
+    /* Contact */
+
+    #Contact form {
+        padding: 25px 20px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 38px 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    nav {
+        gap: 10px 13px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #Home h1 {
+        font-size: 33px;
+    }
+
+    #Home img {
+        width: 220px;
+        height: 265px;
+    }
+
+    #Skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    #Skills ul > img {
+        height: 170px;
+    }
+}
